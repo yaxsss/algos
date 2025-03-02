@@ -1,4 +1,4 @@
-package leetcode
+package twopointers
 
 func abs(v int) int {
 	if v < 0 {

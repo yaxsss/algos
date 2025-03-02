@@ -1,4 +1,4 @@
-package leetcode
+package twopointers
 
 func removeElement(nums []int, val int) int {
 	slowIndex := 0
