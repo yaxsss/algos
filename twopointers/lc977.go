@@ -7,6 +7,7 @@ func abs(v int) int {
 	return v
 }
 
+// 左右指针
 func sortedSquares(nums []int) []int {
 	leftIndex := 0
 	rightIndex := len(nums) - 1

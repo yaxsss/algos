@@ -26,6 +26,7 @@ func MakeTree(a []interface{}, order Order) *TreeNode {
 		list := &list.List{}
 		list.PushBack(header)
 		i := 1
+		// 队列实现，递归都可以用队列替代
 		for list.Len() > 0 {
 			node := list.Front().Value.(*TreeNode)
 			list.Remove(list.Front())

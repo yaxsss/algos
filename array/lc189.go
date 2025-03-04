@@ -1,5 +1,6 @@
 package array
 
+// 先根据k位置，依次对左边倒序，然后对右边倒序，然后对整个结构倒序
 func rotate(nums []int, k int) {
 	k = k % len(nums)
 	if k == 0 {
