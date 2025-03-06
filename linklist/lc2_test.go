@@ -5,13 +5,6 @@ import (
 	"testing"
 )
 
-func resToArray(node *ListNode) []int {
-	ans := []int{}
-	for n := node; n != nil; n = n.Next {
-		ans = append(ans, n.Val)
-	}
-	return ans
-}
 func TestAddTwoNumbers1(t *testing.T) {
 	cases := []struct {
 		node1, node2 *ListNode
@@ -33,7 +26,7 @@ func TestAddTwoNumbers1(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		ans := resToArray(addTwoNumbers(c.node1, c.node2))
+		ans := ListToArray(addTwoNumbers(c.node1, c.node2))
 		if !reflect.DeepEqual(ans, c.expected) {
 			t.Fatalf("result: %v not equal expected: %v", ans, c.expected)
 		}
