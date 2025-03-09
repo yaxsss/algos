@@ -1,5 +1,7 @@
 package tree
 
+// 深度优先遍历和广度优先遍历
+
 import "container/list"
 
 type Order int
