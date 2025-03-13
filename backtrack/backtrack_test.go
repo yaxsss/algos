@@ -6,7 +6,7 @@ import (
 )
 
 // Leetcode 17
-func TestLetterCombinations(t *testing.T) {
+func TestLC17(t *testing.T) {
 	cases := []struct {
 		digits   string
 		expected []string
@@ -22,7 +22,7 @@ func TestLetterCombinations(t *testing.T) {
 	}
 }
 
-func TestCombine(t *testing.T) {
+func TestLC77(t *testing.T) {
 	cases := []struct {
 		n        int
 		k        int
