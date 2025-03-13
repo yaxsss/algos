@@ -19,15 +19,16 @@ func reverseBetween(head *ListNode, left int, right int) *ListNode {
 			if count == left {
 				reverseTail = node
 			}
+			// 逆序处理完成
 			if count == right {
-				if newHead == nil {
+				if newHead == nil { // newHead还没有更新，直接就是reverseHead
 					newHead = reverseHead
-				} else {
+				} else { // 否则就将reverseHead服务正常顺序的Next
 					newTail.Next = reverseHead
 				}
 				newTail = reverseTail
 			}
-		} else {
+		} else { // 正常序部分，直接添加到新链表，维护NewHead和NewTail，
 			if newHead == nil {
 				newHead = node
 			} else {
@@ -37,6 +38,7 @@ func reverseBetween(head *ListNode, left int, right int) *ListNode {
 		}
 		count++
 	}
+	// 最后尾巴一定要为nil
 	newTail.Next = nil
 	return newHead
 }

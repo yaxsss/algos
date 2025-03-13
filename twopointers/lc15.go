@@ -9,6 +9,7 @@ func threeSum(nums []int) [][]int {
 	res := [][]int{}
 	last := []int{}
 	for i := 0; i < len(nums); i++ {
+		// nums[i] > 0直接中断，因为后续的元素不存在三个数相加等于0了
 		if nums[i] > 0 {
 			break
 		}
@@ -26,7 +27,7 @@ func threeSum(nums []int) [][]int {
 				j++
 			} else {
 				r := []int{nums[i], nums[j], nums[k]}
-				// j，k前后元素相同,过滤掉【
+				// j，k前后元素相同,过滤掉
 				if len(last) == 0 || last[0] != r[0] || last[1] != r[1] {
 					res = append(res, r)
 					last = r

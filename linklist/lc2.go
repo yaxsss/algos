@@ -1,6 +1,7 @@
 package linklist
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+	// 保留进位
 	cflags := 0
 	var header, prev *ListNode
 	for {

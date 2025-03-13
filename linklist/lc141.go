@@ -11,6 +11,7 @@ func hasCycle(head *ListNode) bool {
 	// }
 	// return false
 
+	// 题解里面提到的，快慢指针，其实环的话，N和2N一定会在某个节点上相遇
 	if head == nil || head.Next == nil {
 		return false
 	}

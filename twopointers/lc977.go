@@ -7,7 +7,7 @@ func abs(v int) int {
 	return v
 }
 
-// 左右指针
+// 左右指针, 因为nums中数的绝对值是沿着Y值对称的
 func sortedSquares(nums []int) []int {
 	leftIndex := 0
 	rightIndex := len(nums) - 1

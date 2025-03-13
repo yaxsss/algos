@@ -32,7 +32,7 @@ func isPalindrome(s string) bool {
 			}
 			tail--
 		}
-		// 重叠后，有可能c1和c2其中一个非数字或字符
+		// 重叠后，有可能c1和c2其中一个是非法字符
 		if c1 > 0 && c2 > 0 && c1 != c2 {
 			return false
 		}

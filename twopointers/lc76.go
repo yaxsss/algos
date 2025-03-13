@@ -17,6 +17,7 @@ func minWindow(s string, t string) string {
 		if windows[c] == needs[c] {
 			valid++
 		}
+		// 当窗口满足条件时，尝试移动left，缩小合法的窗口范围，并记录到minLen中, 直到窗口又变为不合法，窗口右指针向后移
 		for valid == len(needs) {
 			if right-left < minLen {
 				start = left

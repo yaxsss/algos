@@ -2,7 +2,7 @@ package hashmap
 
 import "testing"
 
-func TestIsIsomorphic(t *testing.T) {
+func TestLC205(t *testing.T) {
 	cases := []struct {
 		s        string
 		t        string

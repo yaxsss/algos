@@ -18,6 +18,7 @@ func simplifyPath(path string) string {
 	for _, p := range paths {
 		switch p {
 		case "..":
+			// 要处理开始就是/..情况
 			if len(stack) > 1 {
 				pop()
 			}
